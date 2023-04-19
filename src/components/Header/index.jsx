@@ -1,25 +1,21 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+//import styled from 'styled-components'
 import Logo from '../../assets/LOGO.svg'
 
 
-const HeaderContainer = styled.header`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 30px;
-`
+/*const HeaderContainer = styled.header`
+  
+`*/
 
 function Header() {
     return (
-        <HeaderContainer>
+        <header className='HeaderContainer'>
             <img src={Logo} alt="logo de kasa" />
             <nav>
                 <Link to='/' >Accueil</Link>
                 <Link to='/about'>A Propos</Link>
             </nav>
-        </HeaderContainer>
+        </header>
     )
 }
 

@@ -1,0 +1,17 @@
+.HeaderContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 68px;
+
+    & nav {
+        display: flex;
+
+        & a {
+            margin: 10px;
+            color: #FF6060;
+        }
+
+    }
+}

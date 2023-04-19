@@ -2,26 +2,15 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/A-Propos";
 import FicheLogement from "./pages/Fiche-Logement";
-import Error from "./components/Error";
+import Error from "./pages/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-    * {
-        font-family: 'Montserrat', sans-serif;
-    }
-    body {
-        margin: 0;
-      }
-`
-
-
+//import axios from "axios";
+import "./utils/index.scss";
 
 export default function App() {
     return (
         <div className="App">
-            <GlobalStyle />
             <Header />
             <main>
                 <Routes>
