@@ -1,3 +1,15 @@
 .card-wrapper {
-    background-color: aqua;
+    background-color: $color-bg;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: $border-radius;
+    margin: 12px 0;
+
+    & img {
+        height: 340px;
+        width: 340px;
+        margin: 40px;
+        border-radius: $border-radius-small;
+    }
+
 }

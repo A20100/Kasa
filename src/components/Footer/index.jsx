@@ -11,11 +11,11 @@ import Logo from '../../assets/logo_footer.png'
 
 export default function Footer() {
     return (
-        <div className='footer-wrapper'>
+        <footer className='footer-wrapper'>
             <img src={Logo} alt="logo de kasa" />
             <p>
                 © 2020 Kasa. All rights reserved
             </p>
-        </div>
+        </footer>
     )
 }

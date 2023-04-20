@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import { useSearchParams } from "react-router-dom"
+
+const { id } = useSearchParams;
+console.log(id);
+
 
 const ErrorWrapper = styled.div`
   margin: 30px;

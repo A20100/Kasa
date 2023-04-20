@@ -9,9 +9,10 @@
     background-position: 100%;
     border-radius: 25px;
     height: 223px;
+    margin-bottom: 31px;
     //filter: brightness(50%);
 
     h1 {
-        color: #ffffff;
+        color: $color-secondary;
     }
 }

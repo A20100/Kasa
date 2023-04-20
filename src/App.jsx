@@ -5,7 +5,6 @@ import FicheLogement from "./pages/Fiche-Logement";
 import Error from "./pages/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-//import axios from "axios";
 import "./utils/index.scss";
 
 export default function App() {
@@ -16,7 +15,7 @@ export default function App() {
                 <Routes>
                     <Route path="*" element={<Error />} />
                     <Route exact path="/" element={<Home />} />
-                    <Route path="/fiche-logement" element={<FicheLogement />} />
+                    <Route path="/fiche-logement/:id" element={<FicheLogement />} />
                     <Route path="/about" element={<About />} />
                 </Routes>
             </main>

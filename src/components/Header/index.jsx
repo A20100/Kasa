@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 import Logo from '../../assets/LOGO.svg'
 
 
-/*const HeaderContainer = styled.header`
-  
-`*/
-
 function Header() {
     return (
         <header className='HeaderContainer'>

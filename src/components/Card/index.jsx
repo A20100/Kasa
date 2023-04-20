@@ -3,10 +3,10 @@ import data from "../../datas/logements.json"
 
 export default function Card() {
     return (
-        <section className="cards-container">
+        <section className="card-wrapper">
             {data.map(({ id, title, cover }) => (
                 <div className="card_logement" key={id}>
-                    <Link className="link_card_logement" to={`/logement/${data.id}`}>
+                    <Link className="link_card_logement" to={`/fiche-logement/${id}`}>
                         <article className="card-logement">
                             <img src={cover} alt="la location" />
                             <div className="card-logement__bg">

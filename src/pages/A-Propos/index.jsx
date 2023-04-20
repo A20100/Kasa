@@ -24,16 +24,20 @@ export default function About() {
         <>
             <div className="banner-about">
             </div>
-            {ContentCollapse.map((rule, id) => (
-                <Collapse
-                    key={id}
-                    aboutTitle={rule.aboutTitle}
-                    aboutText={rule.aboutText}
-                />
+            <section className="collapse-wrapper">
+                {ContentCollapse.map((rule, id) => (
 
-            )
+                    <Collapse
+                        key={id}
+                        aboutTitle={rule.aboutTitle}
+                        aboutText={rule.aboutText}
+                    />
 
-            )}
+
+                )
+
+                )}
+            </section>
         </>
     )
 }
