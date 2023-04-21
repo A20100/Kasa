@@ -1,10 +1,11 @@
 @import "./base/base.scss";
+@import "./style/mixins.scss";
 @import "./style/variables.scss";
 
-@import "../pages/A-Propos/index";
 @import "../components/Header/index";
 @import "../components/Footer/index";
 @import "../components/Banner/index";
 @import "../components/Card/index";
+@import"../components/ErrorContent/index";
 @import "../components/Carousel/index";
 @import "../components/Collapse/index";

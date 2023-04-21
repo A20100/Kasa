@@ -1,15 +1,26 @@
 .collapse-wrapper {
-    display: flex;
+    @include flex-column;
 
 }
 
+.collapsible {
+    width: 75%;
+    margin-bottom: 20px;
+}
+
 .header {
+    display: flex;
+    justify-content: space-between;
     background-color: $color-primary;
     color: $color-secondary;
+    border-radius: $border-radius-smallest;
+    font-size: 24px;
+    padding: 0 10px;
 }
 
 .content {
     background-color: $color-bg;
     color: $color-primary;
+    padding: 0 10px;
 
 }

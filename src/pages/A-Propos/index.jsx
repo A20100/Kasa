@@ -1,3 +1,4 @@
+import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
 
 const ContentCollapse = [
@@ -22,17 +23,17 @@ const ContentCollapse = [
 export default function About() {
     return (
         <>
-            <div className="banner-about">
+            <div className="banner__about">
+                <Banner>            </Banner>
             </div>
             <section className="collapse-wrapper">
-                {ContentCollapse.map((rule, id) => (
+                {ContentCollapse.map((index, id) => (
 
                     <Collapse
                         key={id}
-                        aboutTitle={rule.aboutTitle}
-                        aboutText={rule.aboutText}
+                        collapseTitle={index.aboutTitle}
+                        collapseText={index.aboutText}
                     />
-
 
                 )
 

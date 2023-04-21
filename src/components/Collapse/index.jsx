@@ -14,12 +14,13 @@ export default function Collapse(props) {
     return (
         <div className="collapsible">
             <div className="header" {...getToggleProps({ onClick: handleOnClick })}>
-                <h2>{props.aboutTitle} {isExpanded ? <img src={ChevronHaut} alt="flèche haut" /> : <img src={ChevronBas} alt="flèche bas" />} </h2>
+                <h3>{props.collapseTitle} </h3>
+                {isExpanded ? <img src={ChevronHaut} alt="flèche haut" /> : <img src={ChevronBas} alt="flèche bas" />}
 
             </div>
             <div {...getCollapseProps()}>
                 <div className="content">
-                    <p> {props.aboutText}</p>
+                    <p> {props.collapseText}</p>
                 </div>
             </div>
         </div>
