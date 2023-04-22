@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom"
 import data from "../../datas/logements.json"
 import Carousel from "../../components/Carousel"
 import Collapse from "../../components/Collapse"
+import Tags from "../../components/Tags"
+import Ratings from "../../components/Ratings"
 
 
 export default function FicheLogement() {
@@ -13,26 +15,38 @@ export default function FicheLogement() {
             {item}
         </li>
     ));
+    const choixlogementtags = choixlogement.tags;
+    const tag = choixlogementtags.map((item, index) => (
+        <span key={index} className="tags">
+            {item}
+        </span>
+    ));
 
     return (
         <section className="logement-wrapper">
             <Carousel pictures={choixlogement.pictures} />
-            <h2 className="card-logement_title" >
-                {choixlogement.title}
-            </h2>
+            <div>
+                <h2 className="card-logement_title" >
+                    {choixlogement.title}
+                </h2>
+                <img src={choixlogement.host} alt="hote" />
+
+            </div>
             <p className="card-logement__location">{choixlogement.location}</p>
-            <Collapse
-                collapseTitle="Description"
-                collapseText={choixlogement.description}
-            />
+            <Tags tags={tag} />
+            <Ratings />
+            <div className="collapse-wrapper">
+                <Collapse
+                    collapseTitle="Description"
+                    collapseText={choixlogement.description}
+                />
 
-            <Collapse
-                collapseTitle="Équipements"
-                collapseText={equip}
-            />
+                <Collapse
+                    collapseTitle="Équipements"
+                    collapseText={equip}
+                />
 
-
-
+            </div>
 
         </section>
     )

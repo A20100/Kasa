@@ -1,0 +1,12 @@
+.text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tags {
+    background-color: $color-primary;
+    color: $color-secondary;
+    border-radius: $border-radius-smallest;
+    padding: 1px 18px;
+}
