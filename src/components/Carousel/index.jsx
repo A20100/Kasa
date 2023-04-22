@@ -5,7 +5,7 @@ import chevronDroite from "../../assets/vector-right.svg"
 export default function Carousel({ pictures }) {
 
     const [cpt, setCpt] = useState(0)
-    const nbrePictures = pictures.lenght - 1
+    const nbrePictures = pictures.length - 1
 
     if (cpt < 0) setCpt(nbrePictures)
     if (cpt > nbrePictures) setCpt(0)

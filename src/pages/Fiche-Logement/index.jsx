@@ -9,6 +9,7 @@ import Ratings from "../../components/Ratings"
 export default function FicheLogement() {
     const { id } = useParams()
     const choixlogement = data.find(choixlogement => choixlogement.id === id)
+
     const logementsequipment = choixlogement.equipments;
     const equip = logementsequipment.map((item, index) => (
         <li key={index} className="equipList">
@@ -29,12 +30,13 @@ export default function FicheLogement() {
                 <h2 className="card-logement_title" >
                     {choixlogement.title}
                 </h2>
-                <img src={choixlogement.host} alt="hote" />
+                <p>{choixlogement.host.name}</p>
+                <img src={choixlogement.host.picture} alt="hote" />
 
             </div>
             <p className="card-logement__location">{choixlogement.location}</p>
             <Tags tags={tag} />
-            <Ratings />
+            <Ratings rating={choixlogement.rating} />
             <div className="collapse-wrapper">
                 <Collapse
                     collapseTitle="Description"
