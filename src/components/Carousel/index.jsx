@@ -27,10 +27,10 @@ export default function Carousel({ pictures }) {
                 </div>
 
                 <div>
-                    <button onClick={() => setCpt(cpt - 1)}>{cpt}
+                    <button onClick={() => setCpt(cpt - 1)}>
                         <img src={chevronGauche} className="classChevronGauche" alt={"flèche gauche" + cpt} />
                     </button>
-                    <button onClick={() => setCpt(cpt + 1)}>{cpt}
+                    <button onClick={() => setCpt(cpt + 1)}>
                         <img src={chevronDroite} className="classChevronDroite" alt={"flèche droite" + cpt} />
                     </button>
                 </div>

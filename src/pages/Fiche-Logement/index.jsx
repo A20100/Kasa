@@ -4,9 +4,10 @@ import Carousel from "../../components/Carousel"
 import Collapse from "../../components/Collapse"
 import Tags from "../../components/Tags"
 import Ratings from "../../components/Ratings"
-
+import Host from "../../components/Host"
 
 export default function FicheLogement() {
+
     const { id } = useParams()
     const choixlogement = data.find(choixlogement => choixlogement.id === id)
 
@@ -26,18 +27,17 @@ export default function FicheLogement() {
     return (
         <section className="logement-wrapper">
             <Carousel pictures={choixlogement.pictures} />
-            <div>
-                <h2 className="card-logement_title" >
-                    {choixlogement.title}
-                </h2>
-                <p>{choixlogement.host.name}</p>
-                <img src={choixlogement.host.picture} alt="hote" />
-
+            <Host
+                hostTitle={choixlogement.title}
+                hostLocation={choixlogement.location}
+                hostName={choixlogement.host.name}
+                hostPic={choixlogement.host.picture}
+            />
+            <div className="tags-ratings-wrapper">
+                <Tags tags={tag} />
+                <Ratings rating={choixlogement.rating} />
             </div>
-            <p className="card-logement__location">{choixlogement.location}</p>
-            <Tags tags={tag} />
-            <Ratings rating={choixlogement.rating} />
-            <div className="collapse-wrapper">
+            <div className="collapse-wrapper-location">
                 <Collapse
                     collapseTitle="Description"
                     collapseText={choixlogement.description}

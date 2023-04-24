@@ -1,0 +1,21 @@
+.host-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        color: $color-primary;
+    }
+
+    aside {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+
+        img {
+            border-radius: 65px;
+            height: 64px;
+            width: 64px;
+        }
+    }
+}

@@ -1,6 +1,11 @@
 .collapse-wrapper {
     @include flex-column;
 
+    &-location {
+        display: flex;
+        gap: 25px;
+    }
+
 }
 
 .collapsible {

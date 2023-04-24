@@ -1,24 +1,48 @@
 .carousel {
-    display: flex;
     position: relative;
 
-}
+    .div-image img {
+        height: 415px;
+        width: 100%;
+        border-radius: $border-radius;
+        object-fit: cover;
+    }
 
-.div-image img {
+    button {
+        overflow: hidden;
+        border: 0;
+        padding: 0;
 
+        .classChevronGauche {
+            top: 38%;
+            left: 2%;
+            position: absolute;
+            z-index: 10;
+            //width: 12px;
+            //height: 20px;
+            cursor: pointer;
+        }
 
-    height: 415px;
-    width: 100%;
-    border-radius: $border-radius;
+        .classChevronDroite {
+            top: 38%;
+            right: 2%;
+            position: absolute;
+            z-index: 10;
+            //width: 12px;
+            //height: 20px;
+            cursor: pointer;
 
-}
+        }
+    }
 
+    .compteurImages {
+        color: $color-secondary;
+        margin: 0;
+        position: absolute;
+        left: 48.95%;
+        right: 49.11%;
+        top: 86.19%;
+        bottom: 6.01%;
+    }
 
-
-.compteurImages {
-    position: absolute;
-    left: 48.95%;
-    right: 49.11%;
-    top: 86.19%;
-    bottom: 6.01%;
 }

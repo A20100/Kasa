@@ -1,15 +1,15 @@
 .ErrorWrapper {
     @include flex-column;
-    margin: 30px;
     color: $color-primary;
+    margin-bottom: 10px;
 }
 
 .ErrorTitle {
     font-weight: 700;
     font-size: 288px;
-    margin: 66px;
 }
 
 .ErrorSubtitle {
     font-weight: 300;
+    margin: -30px 0 182px 0;
 }
