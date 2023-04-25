@@ -4,6 +4,13 @@
     &-location {
         display: flex;
         gap: 25px;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            @include flex-column;
+            gap: 0;
+
+        }
+
     }
 
 }
@@ -11,6 +18,11 @@
 .collapsible {
     width: 75%;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        width: 100%;
+    }
+
 }
 
 .header {
@@ -22,6 +34,18 @@
     border-radius: $border-radius-smallest;
     padding: 0 10px;
     height: 52px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        height: 30px;
+    }
+
+    img {
+        @media screen and (max-width: $breakpoint-desktop) {
+            height: 9.14px;
+        }
+
+
+    }
 }
 
 .content {

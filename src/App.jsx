@@ -17,6 +17,7 @@ export default function App() {
                     <Route exact path="/" element={<Home />} />
                     <Route path="/fiche-logement/:id" element={<FicheLogement />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/fiche-logement/:id/*" element={<Error />} />
                 </Routes>
             </main>
             <Footer />

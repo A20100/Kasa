@@ -5,6 +5,12 @@
     justify-content: space-between;
     padding-bottom: 68px;
 
+    @media screen and (max-width: $breakpoint-desktop) {
+        padding-bottom: 30px;
+    }
+
+
+
     & nav {
         display: flex;
 
@@ -12,7 +18,7 @@
             margin: 10px;
             font-size: 24px;
 
-            @media screen and (max-width: 769px) {
+            @media screen and (max-width: $breakpoint-desktop) {
                 font-size: 12px;
             }
         }

@@ -1,17 +1,27 @@
 .banner {
-    &__home {
-        background-image: url("../../assets/e270fc8fc902a1eb738458e7b29c1899.jpg");
-        @include backgroundrules;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: $border-radius;
-        margin-bottom: 31px;
-        //filter: brightness(50%);
+    background-image: url("../../assets/e270fc8fc902a1eb738458e7b29c1899.jpg");
+    filter: brightness(50%);
+    @include backgroundrules;
+    border-radius: $border-radius;
+    margin-bottom: 31px;
+    position: relative;
 
-        h1 {
-            color: $color-secondary;
+
+    &__home h1 {
+        left: 29.9%;
+        right: 25.14%;
+        bottom: 70.04%;
+        position: absolute;
+        color: $color-secondary;
+        z-index: 1;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            left: 9.6%;
+            right: 32.53%;
+            top: 14.04%;
+            bottom: 80.05%;
         }
+
     }
 
     &__about {
