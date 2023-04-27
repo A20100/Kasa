@@ -8,6 +8,7 @@ export default function Card() {
                 <div className="card_logement" key={id}>
                     <Link className="link_card_logement" to={`/fiche-logement/${id}`}>
                         <article className="card-logement">
+                            <div className="layer"></div>
                             <img src={cover} alt="la location" />
                             <div className="card-logement__bg">
                                 <p className="card-logement__title">{title}</p>

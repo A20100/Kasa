@@ -14,7 +14,7 @@ export default function App() {
             <main>
                 <Routes>
                     <Route path="*" element={<Error />} />
-                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/Kasa" element={<Home />} />
                     <Route path="/fiche-logement/:id" element={<FicheLogement />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/fiche-logement/:id/*" element={<Error />} />

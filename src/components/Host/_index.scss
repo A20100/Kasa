@@ -1,21 +1,14 @@
-.host-wrapper {
+.logement-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        display: block;
+    }
 
     p {
         color: $color-primary;
     }
 
-    aside {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
-
-        img {
-            border-radius: 65px;
-            height: 64px;
-            width: 64px;
-        }
-    }
 }
