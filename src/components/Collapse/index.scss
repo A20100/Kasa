@@ -34,6 +34,7 @@
     border-radius: $border-radius-smallest;
     padding: 0 10px;
     height: 52px;
+    cursor: pointer;
 
     @media screen and (max-width: $breakpoint-desktop) {
         height: 30px;

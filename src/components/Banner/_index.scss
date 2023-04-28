@@ -1,28 +1,17 @@
 .banner {
-    background-image: url("../../assets/e270fc8fc902a1eb738458e7b29c1899.jpg");
-    filter: brightness(50%);
-    @include backgroundrules;
-    border-radius: $border-radius;
-    margin-bottom: 31px;
-    position: relative;
 
-
-    &__home h1 {
-        left: 29.9%;
-        right: 25.14%;
-        bottom: 70.04%;
-        position: absolute;
-        color: $color-secondary;
-        z-index: 1;
-
-        @media screen and (max-width: $breakpoint-desktop) {
-            left: 9.6%;
-            right: 32.53%;
-            top: 14.04%;
-            bottom: 80.05%;
-        }
-
+    &__home {
+        background-image: url("../../assets/thumbnail_IMG_1584.jpg");
+        @include backgroundrules;
+        border-radius: $border-radius;
+        margin-bottom: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+
+
 
     &__about {
         background-image: url("../../assets/b9995860bb6384a77ca7dc9bf52da3be.jpg");
