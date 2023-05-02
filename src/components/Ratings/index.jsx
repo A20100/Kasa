@@ -1,4 +1,4 @@
-import Star from "../../assets/star-inactive 2.png"
+import Star from "../../assets/empty_star.png"
 import FullStar from "../../assets/star-full.png"
 
 export default function Ratings({ rating }) {
