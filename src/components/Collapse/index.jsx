@@ -3,11 +3,11 @@ import ChevronBas from "../../assets/vectorBas.svg"
 import ChevronHaut from "../../assets/vectorHaut.svg"
 
 export default function Collapse(props) {
-    const [isExpanded, setExpanded] = useState(false);
+    const [isExpanded, setExpanded] = useState(false); //je définiS l'index du collapse expanded en faux
     function handleOnClick() {
         setExpanded(!isExpanded);
     }
-    return (
+    return (  //div h3 est clickable - on change isexpanded en true - et donc on fait apparaitre le p
         <div className="collapsible">
             <div onClick={handleOnClick} className="header"  >
                 <h3>{props.collapseTitle} </h3>

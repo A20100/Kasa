@@ -13,6 +13,13 @@
 
 .card_logement {
     margin: 25px;
+    width: 28%;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        margin: 25px;
+        width: 70%;
+    }
+
 }
 
 
@@ -32,13 +39,13 @@
     & img {
         object-fit: cover;
         height: 340px;
-        width: 340px;
+        width: 100%;
         border-radius: $border-radius-small;
         background: $color-primary;
 
         @media screen and (max-width: $breakpoint-desktop) {
             height: 255px;
-            width: 335px;
+            width: 100%;
         }
     }
 

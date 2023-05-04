@@ -6,7 +6,7 @@ export default function Home() {
         <div>
             <div className="banner__home">
                 <h1>Chez vous, partout et ailleurs</h1>
-                <Banner>            </Banner>
+                <Banner />
             </div>
 
             <Card />

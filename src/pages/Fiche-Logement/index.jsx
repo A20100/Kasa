@@ -10,13 +10,17 @@ import Aside from "../../components/Aside"
 
 export default function FicheLogement() {
 
-    const { id } = useParams()
+    const { id } = useParams()  //avec useparams, on recupère l'id dans l'URL
 
-    const choixlogement = data.find(choixlogement => choixlogement.id === id);
+    const choixlogement = data.find(choixlogement => choixlogement.id === id);  //on récupère avec l'id toutes les valeurs qui nous intéressent sur un appartement
+
+    //si l'ID est fausse dans l'URL, notre const choixlogement sera indefine, du coup on renvoie sur la page d'erreur
     if (!choixlogement) {
         return <Error />
     }
 
+
+    // on recupère les "équipements" et les "tags", j'ai pensé que c'était inutile de faire des components pour ces éléments
     const logementsequipment = choixlogement.equipments;
     const equip = logementsequipment.map((item, index) => (
         <li key={index} className="equipList">

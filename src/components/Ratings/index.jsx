@@ -16,7 +16,7 @@ export default function Ratings({ rating }) {
                 ) : (
                     <img
                         key={star}
-                        className="star empty"
+                        className="star"
                         src={Star}
                         alt="empty star"
                     />
