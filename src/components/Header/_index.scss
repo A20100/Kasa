@@ -6,7 +6,7 @@
     margin-top: 40px;
     padding-bottom: 68px;
 
-    @media screen and (max-width: $breakpoint-desktop) {
+    @media screen and (max-width: $breakpoint-tablet) {
         margin-top: 0;
         padding-bottom: 30px;
     }
@@ -14,7 +14,7 @@
     & img {
         height: 54.33px;
 
-        @media screen and (max-width: $breakpoint-desktop) {
+        @media screen and (max-width: $breakpoint-tablet) {
             height: 37.46px;
         }
     }
@@ -26,7 +26,7 @@
             margin: 10px;
             font-size: 24px;
 
-            @media screen and (max-width: $breakpoint-desktop) {
+            @media screen and (max-width: $breakpoint-tablet) {
                 font-size: 12px;
             }
         }

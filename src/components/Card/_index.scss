@@ -43,7 +43,7 @@
         border-radius: $border-radius-small;
         background: $color-primary;
 
-        @media screen and (max-width: $breakpoint-desktop) {
+        @media screen and (max-width: $breakpoint-tablet) {
             height: 255px;
             width: 100%;
         }
@@ -59,7 +59,7 @@
         bottom: 5.88%;
         color: $color-secondary;
 
-        @media screen and (max-width: $breakpoint-desktop) {
+        @media screen and (max-width: $breakpoint-tablet) {
             top: 73.82%;
         }
     }

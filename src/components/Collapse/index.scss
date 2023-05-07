@@ -36,12 +36,12 @@
     height: 52px;
     cursor: pointer;
 
-    @media screen and (max-width: $breakpoint-desktop) {
+    @media screen and (max-width: $breakpoint-tablet) {
         height: 30px;
     }
 
     img {
-        @media screen and (max-width: $breakpoint-desktop) {
+        @media screen and (max-width: $breakpoint-tablet) {
             height: 9.14px;
         }
 

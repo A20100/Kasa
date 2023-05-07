@@ -10,7 +10,7 @@ import Aside from "../../components/Aside"
 
 export default function FicheLogement() {
 
-    const { id } = useParams()  //avec useparams, on recupère l'id dans l'URL
+    const { id } = useParams()  //avec le hook useparams, on recupère l'id dans l'URL
 
     const choixlogement = data.find(choixlogement => choixlogement.id === id);  //on récupère avec l'id toutes les valeurs qui nous intéressent sur un appartement
 
@@ -20,13 +20,14 @@ export default function FicheLogement() {
     }
 
 
-    // on recupère les "équipements" et les "tags", j'ai pensé que c'était inutile de faire des components pour ces éléments
+    // on recupère les props "équipements" et les "tags"
     const logementsequipment = choixlogement.equipments;
     const equip = logementsequipment.map((item, index) => (
         <li key={index} className="equipList">
             {item}
         </li>
     ));
+
     const choixlogementtags = choixlogement.tags;
     const tag = choixlogementtags.map((item, index) => (
         <span key={index} className="tags">
