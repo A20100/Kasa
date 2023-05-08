@@ -1,7 +1,11 @@
-.tags-ratings-wrapper {
+.tags-input-container {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+
+    :hover {
+        cursor: pointer;
+    }
 
 }
 

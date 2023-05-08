@@ -5,7 +5,7 @@
         display: flex;
         gap: 25px;
 
-        @media screen and (max-width: $breakpoint-desktop) {
+        @media screen and (max-width: $breakpoint-tablet) {
             @include flex-column;
             gap: 0;
 
@@ -16,7 +16,7 @@
 }
 
 .collapsible {
-    width: 75%;
+    width: 85%;
     margin-bottom: 20px;
 
     @media screen and (max-width: $breakpoint-desktop) {
@@ -54,5 +54,13 @@
     color: $color-primary;
     border-radius: $border-radius-smallest;
     padding: 1px 18px;
+
+    p {
+        font-size: 24px;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 12px;
+        }
+    }
 
 }

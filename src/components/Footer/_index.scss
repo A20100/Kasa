@@ -6,6 +6,16 @@
     background-color: $color-footer;
     color: $color-secondary;
 
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding-top: 62px;
+    }
+
+
+
+    & img {
+        height: 36.11px;
+    }
+
     & p {
         padding: 29px 0;
         font-size: 24px;

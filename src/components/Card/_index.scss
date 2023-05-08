@@ -2,26 +2,36 @@
     background-color: $color-bg;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: $border-radius;
+    padding: 50px;
 
     @media screen and (max-width: $breakpoint-desktop) {
+        padding: 25px;
+    }
+
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0;
         @include flex-column;
         background-color: $color-secondary;
     }
 }
 
 .card_logement {
-    margin: 25px;
-    width: 28%;
+    margin-bottom: 25px;
+    width: 30%;
 
     @media screen and (max-width: $breakpoint-desktop) {
-        margin: 25px;
-        width: 70%;
+        width: 47%;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin-bottom: 20px;
+        width: 99%;
     }
 
 }
-
 
 .card-logement {
     position: relative;
