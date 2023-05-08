@@ -3,21 +3,31 @@
     justify-content: space-between;
     margin: 20px 0;
 
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin: 5px 0;
+    }
+
     :hover {
         cursor: pointer;
     }
 
+    .text {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 10px;
+        }
+    }
+
 }
 
-.text {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
+
 
 .tags {
     background-color: $color-primary;
     color: $color-secondary;
-    border-radius: $border-radius-smallest;
-    padding: 1px 18px;
+    border-radius: $border-radius-small;
+    padding: 2px 18%;
 }

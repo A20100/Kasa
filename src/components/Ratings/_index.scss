@@ -7,4 +7,9 @@
 .star {
     width: 25px;
     height: 24px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        width: 13px;
+        height: 13.41px;
+    }
 }

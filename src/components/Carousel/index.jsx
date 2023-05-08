@@ -26,7 +26,7 @@ export default function Carousel({ pictures }) {
                     <img src={pictures[cpt]} className="classImage" key={"car" + cpt} alt={"photo" + cpt} />
                 </div>
 
-                <div>
+                <div className="button-wrapper">
                     <button onClick={() => setCpt(cpt - 1)}>
                         <img src={chevronGauche} className="classChevronGauche" alt={"flèche gauche" + cpt} />
                     </button>

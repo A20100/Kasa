@@ -1,19 +1,33 @@
 aside {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: flex-end;
 
     @media screen and (max-width: $breakpoint-tablet) {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 10px;
     }
 
     .profile {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 20px;
+
+        p {
+            width: 63px;
+            height: 66px;
+            text-align: right;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                width: 43px;
+                height: 46px;
+
+            }
+        }
+
 
         img {
             border-radius: 65px;
