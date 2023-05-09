@@ -10,7 +10,7 @@ import Aside from "../../components/Aside"
 
 export default function FicheLogement() {
 
-    const { id } = useParams()  //avec le hook useparams, on recupère l'id dans l'URL
+    const { id } = useParams()  //Il est possible de passer des paramètres dans une route et de les récupérer avec useParams(). avec le hook useparams, on recupère l'id dans l'URL
 
     const choixlogement = data.find(choixlogement => choixlogement.id === id);  //on récupère avec l'id toutes les valeurs qui nous intéressent sur un appartement
 
