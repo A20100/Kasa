@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/LOGO.svg'
 
 
@@ -7,8 +7,8 @@ function Header() {
         <header className='HeaderContainer'>
             <img src={Logo} alt="logo de kasa" />
             <nav>
-                <Link to='/' >Accueil</Link>
-                <Link to='/about'>A Propos</Link>
+                <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to='/' >Accueil</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active" : "inactive")} to='/about'>A Propos</NavLink>
             </nav>
         </header>
     )
