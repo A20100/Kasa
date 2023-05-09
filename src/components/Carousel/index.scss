@@ -9,6 +9,8 @@
 
         @media screen and (max-width: $breakpoint-tablet) {
             height: 255px;
+            border-radius: $border-radius-small;
+
 
         }
     }

@@ -7,7 +7,7 @@ export default function Error() {
             <h2 className="ErrorSubtitle">
                 Oups! La page que vous demandez n'existe pas.
             </h2>
-            <Link to='/Kasa'>
+            <Link to='/'>
                 Retourner sur la page d’accueil
             </Link>
         </section>

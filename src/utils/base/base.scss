@@ -11,6 +11,8 @@ body {
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 50px;
+
 
     @media screen and (max-width: 992px) {
         padding: 10px;
@@ -29,6 +31,11 @@ a {
     &:hover {
         cursor: pointer;
         text-decoration-line: underline;
+    }
+
+    &:focus {
+        text-decoration-line: underline;
+
     }
 }
 
